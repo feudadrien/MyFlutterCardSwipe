@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 
 Positioned cardDemoDummy(
@@ -24,7 +25,7 @@ Positioned cardDemoDummy(
         width: screenSize.width / 1.2 + cardWidth,
         height: screenSize.height / 1.7,
         decoration: new BoxDecoration(
-          color: new Color.fromRGBO(121, 114, 173, 1.0),
+          color: Colors.white,
           borderRadius: new BorderRadius.circular(8.0),
         ),
         child: new Column(
@@ -46,38 +47,102 @@ Positioned cardDemoDummy(
                 child: new Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
-                    new FlatButton(
-                        padding: new EdgeInsets.all(0.0),
-                        onPressed: () {},
-                        child: new Container(
-                          height: 60.0,
-                          width: 130.0,
-                          alignment: Alignment.center,
-                          decoration: new BoxDecoration(
-                            color: Colors.red,
-                            borderRadius: new BorderRadius.circular(60.0),
-                          ),
-                          child: new Text(
-                            "DON'T",
-                            style: new TextStyle(color: Colors.white),
-                          ),
-                        )),
-                    new FlatButton(
-                        padding: new EdgeInsets.all(0.0),
-                        onPressed: () {},
-                        child: new Container(
-                          height: 60.0,
-                          width: 130.0,
-                          alignment: Alignment.center,
-                          decoration: new BoxDecoration(
-                            color: Colors.cyan,
-                            borderRadius: new BorderRadius.circular(60.0),
-                          ),
+
+                new RaisedButton(
+                padding: new EdgeInsets.all(0.0),
+                onPressed: () {},
+                elevation: 2.0,
+                color: Colors.white,
+                shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(60.0)),
+                child: new Container(
+                  height: 60.0,
+                  width: 60.0,
+                  alignment: Alignment.center,
+                  decoration: new BoxDecoration(
+                    color: Colors.white,
+                    borderRadius:
+                    new BorderRadius.circular(60.0),
+                  ),
+                  child: new Icon(
+                    Icons.clear,
+                    //Icons.delete_forever,
+                    color: Colors.red,
+                    size: 55.0,
+                  ),
+                )),
+
+        /* new RaisedButton(                         //Refresh button for later
+                                  padding: new EdgeInsets.all(0.0),
+                                  onPressed: () {},
+                                  elevation: 2.0,
+                                  color: Colors.white,
+                                  shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(90.0)),
+                                  child: new Container(
+                                    height: 40.0,
+                                    width: 40.0,
+                                    alignment: Alignment.center,
+                                    decoration: new BoxDecoration(
+                                      color: Colors.white,
+                                      borderRadius:
+                                      new BorderRadius.circular(100.0),
+                                    ),
+                                    child: new Icon(
+                                      Icons.refresh,
+                                      color: Colors.yellow,
+                                      size: 30.0,
+                                    ),
+                                  )),
+*/
+        new RaisedButton(
+            padding: new EdgeInsets.all(0.0),
+            onPressed: (){},
+            elevation: 2.0,
+            color: Colors.white,
+            shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(90.0)),
+            child: new Container(
+              height: 40.0,
+              width: 40.0,
+              alignment: Alignment.center,
+              decoration: new BoxDecoration(
+                color: Colors.white,
+                borderRadius:
+                new BorderRadius.circular(60.0),
+              ),
+              child: new Icon(
+                Icons.snooze,
+                color: Colors.blue,
+                size: 30.0,
+              ),
+            )),
+
+        new RaisedButton(
+            padding: new EdgeInsets.all(0.0),
+            onPressed: (){},
+            elevation: 2.0,
+            color: Colors.white,
+            shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(60.0)),
+            child: new Container(
+              height: 60.0,
+              width: 60.0,
+              alignment: Alignment.center,
+              decoration: new BoxDecoration(
+                color: Colors.white,
+                borderRadius:
+                new BorderRadius.circular(60.0),
+              ),
+              child: new Icon(
+                Icons.favorite ,
+                //Icons.insert_invitation,
+                color: Colors.green,
+                size: 55.0,
+              ),
+            )),
+                          /*
                           child: new Text(
                             "I'M IN",
                             style: new TextStyle(color: Colors.white),
                           ),
-                        ))
+                        ))*/
                   ],
                 ))
           ],
@@ -86,3 +151,5 @@ Positioned cardDemoDummy(
     ),
   );
 }
+
+

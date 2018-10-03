@@ -58,8 +58,8 @@ Positioned cardDemo(
                 //     new MaterialPageRoute(
                 //         builder: (context) => new DetailPage(type: img)));
                 Navigator.of(context).push(new PageRouteBuilder(
-                      pageBuilder: (_, __, ___) => new DetailPage(type: img),
-                    ));
+                  pageBuilder: (_, __, ___) => new DetailPage(type: img),
+                ));
               },
               child: new Card(
                 color: Colors.transparent,
@@ -87,7 +87,7 @@ Positioned cardDemo(
                       new Container(
                           width: screenSize.width / 1.2 + cardWidth,
                           height:
-                              screenSize.height / 1.7 - screenSize.height / 2.2,
+                          screenSize.height / 1.7 - screenSize.height / 2.2,
                           alignment: Alignment.center,
                           child: new Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -115,11 +115,11 @@ Positioned cardDemo(
                                       Icons.clear,
                                       //Icons.delete_forever,
                                       color: Colors.red,
-                                      size: 45.0,
+                                      size: 55.0,
                                     ),
                                   )),
 
-                              new RaisedButton(
+                             /* new RaisedButton(                         //Refresh button for later
                                   padding: new EdgeInsets.all(0.0),
                                   onPressed: () {
                                     swipeLeft();
@@ -142,7 +142,7 @@ Positioned cardDemo(
                                       size: 30.0,
                                     ),
                                   )),
-
+*/
                               new RaisedButton(
                                   padding: new EdgeInsets.all(0.0),
                                   onPressed: (){
@@ -174,7 +174,7 @@ Positioned cardDemo(
                                   },
                                   elevation: 2.0,
                                   color: Colors.white,
-                                shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(60.0)),
+                                  shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(60.0)),
                                   child: new Container(
                                     height: 60.0,
                                     width: 60.0,
@@ -185,10 +185,10 @@ Positioned cardDemo(
                                       new BorderRadius.circular(60.0),
                                     ),
                                     child: new Icon(
-                                      Icons.favorite,
+                                      Icons.favorite ,
                                       //Icons.insert_invitation,
                                       color: Colors.green,
-                                      size: 45.0,
+                                      size: 55.0,
                                     ),
                                   ))
                               /*

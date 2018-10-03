@@ -150,7 +150,7 @@ class CardDemoState extends State<CardDemo> with TickerProviderStateMixin {
               child: new Container(
                   margin: const EdgeInsets.all(15.0),
                   child: new Icon(
-                    Icons.calendar_today,
+                    Icons.insert_invitation,
                     color: new Color.fromRGBO(27,67,131,1.0),
                     size: 40.0,
                   )),
@@ -192,33 +192,34 @@ class CardDemoState extends State<CardDemo> with TickerProviderStateMixin {
           alignment: Alignment.center,
           child: dataLength > 0
               ? new Stack(
-                  alignment: AlignmentDirectional.center,
-                  children: data.map((item) {
-                    if (data.indexOf(item) == dataLength - 1) {
-                      return cardDemo(
-                          item,
-                          bottom.value,
-                          right.value,
-                          0.0,
-                          backCardWidth + 10,
-                          rotate.value,
-                          rotate.value < -10 ? 0.1 : 0.0,
-                          context,
-                          dismissImg,
-                          flag,
-                          addImg,
-                          swipeRight,
-                          swipeLeft);
-                    } else {
-                      backCardPosition = backCardPosition - 10;
-                      backCardWidth = backCardWidth + 10;
+              alignment: AlignmentDirectional.center,
+              children: data.map((item) {
+                if (data.indexOf(item) == dataLength - 1) {
+                  return cardDemo(
+                      item,
+                      bottom.value,
+                      right.value,
+                      0.0,
+                      backCardWidth + 10,
+                      rotate.value,
+                      rotate.value < -10 ? 0.1 : 0.0,
+                      context,
+                      dismissImg,
+                      flag,
+                      addImg,
+                      swipeRight,
+                      swipeLeft);
+                } else {
+                  backCardPosition = backCardPosition - 10;
+                  backCardWidth = backCardWidth + 10;
 
-                      return cardDemoDummy(item, backCardPosition, 0.0, 0.0,
-                          backCardWidth, 0.0, 0.0, context);
-                    }
-                  }).toList())
+                  return cardDemoDummy(item, backCardPosition, 0.0, 0.0,
+                      backCardWidth, 0.0, 0.0, context);
+                }
+              }).toList())
               : new Text("No Event Left :(",
-                  style: new TextStyle(color: new Color.fromRGBO(247, 123, 20, 1.0), fontSize: 50.0)),
+              style: new TextStyle(color: new Color.fromRGBO(247, 123, 20, 1.0), fontSize: 50.0)),
         )));
   }
 }
+
