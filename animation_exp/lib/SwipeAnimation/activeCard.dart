@@ -114,8 +114,9 @@ Positioned cardDemo(
                                     child: new Icon(
                                       Icons.clear,
                                       //Icons.delete_forever,
-                                      color: Colors.red,
-                                      size: 55.0,
+                                      color: new Color.fromRGBO(247, 123, 20, 1.0),
+                                      //color: Colors.red,
+                                      size: 50.0,
                                     ),
                                   )),
 
@@ -162,7 +163,7 @@ Positioned cardDemo(
                                     ),
                                     child: new Icon(
                                       Icons.snooze,
-                                      color: Colors.blue,
+                                      color: Colors.black,
                                       size: 30.0,
                                     ),
                                   )),
@@ -187,7 +188,8 @@ Positioned cardDemo(
                                     child: new Icon(
                                       Icons.favorite ,
                                       //Icons.insert_invitation,
-                                      color: Colors.green,
+                                      color: new Color.fromRGBO(27,67,131,1.0),
+                                      //color: Colors.green,
                                       size: 55.0,
                                     ),
                                   ))

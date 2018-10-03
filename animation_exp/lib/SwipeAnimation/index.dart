@@ -134,7 +134,8 @@ class CardDemoState extends State<CardDemo> with TickerProviderStateMixin {
           leading: new Container(
             margin: const EdgeInsets.all(15.0),
             child: new Icon(
-              Icons.delete_forever,
+              Icons.settings,
+              //Icons.delete_forever,
               color: new Color.fromRGBO(247, 123, 20, 1.0),
               size: 45.0,
             ),
