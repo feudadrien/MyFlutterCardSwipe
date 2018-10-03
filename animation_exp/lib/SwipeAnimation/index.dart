@@ -129,13 +129,13 @@ class CardDemoState extends State<CardDemo> with TickerProviderStateMixin {
     return (new Scaffold(
         appBar: new AppBar(
           elevation: 0.0,
-          backgroundColor: new Color.fromRGBO(106, 94, 175, 1.0),
+          backgroundColor: new Color.fromRGBO(255, 255, 255, 1.0),
           centerTitle: true,
           leading: new Container(
             margin: const EdgeInsets.all(15.0),
             child: new Icon(
-              Icons.equalizer,
-              color: Colors.cyan,
+              Icons.restore_from_trash,
+              color: new Color.fromRGBO(27,67,131,1.0),
               size: 30.0,
             ),
           ),
@@ -150,8 +150,8 @@ class CardDemoState extends State<CardDemo> with TickerProviderStateMixin {
               child: new Container(
                   margin: const EdgeInsets.all(15.0),
                   child: new Icon(
-                    Icons.search,
-                    color: Colors.cyan,
+                    Icons.calendar_today,
+                    color: new Color.fromRGBO(27,67,131,1.0),
                     size: 30.0,
                   )),
             ),
@@ -160,9 +160,10 @@ class CardDemoState extends State<CardDemo> with TickerProviderStateMixin {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               new Text(
-                "EVENTS",
+                "MK",
                 style: new TextStyle(
-                    fontSize: 12.0,
+                    color: new Color.fromRGBO(247, 123, 20, 1.0),
+                    fontSize: 30.0,
                     letterSpacing: 3.5,
                     fontWeight: FontWeight.bold),
               ),
@@ -182,7 +183,7 @@ class CardDemoState extends State<CardDemo> with TickerProviderStateMixin {
           ),
         ),
         body: new Container(
-          color: new Color.fromRGBO(106, 94, 175, 1.0),
+          color: new Color.fromRGBO(255, 255, 255, 1.0),
           alignment: Alignment.center,
           child: dataLength > 0
               ? new Stack(
@@ -211,8 +212,8 @@ class CardDemoState extends State<CardDemo> with TickerProviderStateMixin {
                           backCardWidth, 0.0, 0.0, context);
                     }
                   }).toList())
-              : new Text("No Event Left",
-                  style: new TextStyle(color: Colors.white, fontSize: 50.0)),
+              : new Text("No Event Left :(",
+                  style: new TextStyle(color: new Color.fromRGBO(247, 123, 20, 1.0), fontSize: 50.0)),
         )));
   }
 }
