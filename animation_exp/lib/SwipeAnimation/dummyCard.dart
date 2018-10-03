@@ -52,21 +52,21 @@ Positioned cardDemoDummy(
                 padding: new EdgeInsets.all(0.0),
                 onPressed: () {},
                 elevation: 2.0,
-                color: Colors.white,
+                color: new Color.fromRGBO(247, 123, 20, 1.0),
                 shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(60.0)),
                 child: new Container(
                   height: 60.0,
                   width: 60.0,
                   alignment: Alignment.center,
                   decoration: new BoxDecoration(
-                    color: Colors.white,
+                    color: new Color.fromRGBO(247, 123, 20, 1.0),
                     borderRadius:
                     new BorderRadius.circular(60.0),
                   ),
                   child: new Icon(
                     Icons.clear,
                     //Icons.delete_forever,
-                    color: new Color.fromRGBO(247, 123, 20, 1.0),
+                    color: Colors.white,
                     //color: Colors.red,
                     size: 55.0,
                   ),
@@ -111,7 +111,7 @@ Positioned cardDemoDummy(
               ),
               child: new Icon(
                 Icons.snooze,
-                color: Colors.black,
+                color: new Color.fromRGBO(27,67,131,1.0),
                 //color: Colors.blue,
                 size: 30.0,
               ),
@@ -137,7 +137,7 @@ Positioned cardDemoDummy(
                 //Icons.insert_invitation,
                 color: new Color.fromRGBO(27,67,131,1.0),
                 //color: Colors.green,
-                size: 55.0,
+                size: 50.0,
               ),
             )),
                           /*
