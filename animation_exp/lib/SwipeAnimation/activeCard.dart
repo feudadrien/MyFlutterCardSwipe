@@ -92,36 +92,117 @@ Positioned cardDemo(
                           child: new Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: <Widget>[
-                              new FlatButton(
+
+
+                              new RaisedButton(
                                   padding: new EdgeInsets.all(0.0),
                                   onPressed: () {
                                     swipeLeft();
                                   },
+                                  elevation: 2.0,
+                                  color: Colors.white,
+                                  shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(60.0)),
                                   child: new Container(
                                     height: 60.0,
-                                    width: 130.0,
+                                    width: 60.0,
                                     alignment: Alignment.center,
                                     decoration: new BoxDecoration(
-                                      color: Colors.red,
+                                      color: Colors.white,
                                       borderRadius:
-                                          new BorderRadius.circular(60.0),
+                                      new BorderRadius.circular(60.0),
                                     ),
-                                    child: new Text(
-                                      "CAN'T GO",
-                                      style: new TextStyle(color: Colors.white),
+                                    child: new Icon(
+                                      Icons.clear,
+                                      //Icons.delete_forever,
+                                      color: Colors.red,
+                                      size: 45.0,
                                     ),
                                   )),
-                              new FlatButton(
+
+                              new RaisedButton(
+                                  padding: new EdgeInsets.all(0.0),
+                                  onPressed: () {
+                                    swipeLeft();
+                                  },
+                                  elevation: 2.0,
+                                  color: Colors.white,
+                                  shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(90.0)),
+                                  child: new Container(
+                                    height: 40.0,
+                                    width: 40.0,
+                                    alignment: Alignment.center,
+                                    decoration: new BoxDecoration(
+                                      color: Colors.white,
+                                      borderRadius:
+                                      new BorderRadius.circular(100.0),
+                                    ),
+                                    child: new Icon(
+                                      Icons.refresh,
+                                      color: Colors.yellow,
+                                      size: 30.0,
+                                    ),
+                                  )),
+
+                              new RaisedButton(
+                                  padding: new EdgeInsets.all(0.0),
+                                  onPressed: (){
+                                    swipeRight();
+                                  },
+                                  elevation: 2.0,
+                                  color: Colors.white,
+                                  shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(90.0)),
+                                  child: new Container(
+                                    height: 40.0,
+                                    width: 40.0,
+                                    alignment: Alignment.center,
+                                    decoration: new BoxDecoration(
+                                      color: Colors.white,
+                                      borderRadius:
+                                      new BorderRadius.circular(60.0),
+                                    ),
+                                    child: new Icon(
+                                      Icons.snooze,
+                                      color: Colors.blue,
+                                      size: 30.0,
+                                    ),
+                                  )),
+
+                              new RaisedButton(
+                                  padding: new EdgeInsets.all(0.0),
+                                  onPressed: (){
+                                    swipeRight();
+                                  },
+                                  elevation: 2.0,
+                                  color: Colors.white,
+                                shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(60.0)),
+                                  child: new Container(
+                                    height: 60.0,
+                                    width: 60.0,
+                                    alignment: Alignment.center,
+                                    decoration: new BoxDecoration(
+                                      color: Colors.white,
+                                      borderRadius:
+                                      new BorderRadius.circular(60.0),
+                                    ),
+                                    child: new Icon(
+                                      Icons.favorite,
+                                      //Icons.insert_invitation,
+                                      color: Colors.green,
+                                      size: 45.0,
+                                    ),
+                                  ))
+                              /*
+                              new FlatButton(                  // Original Button
                                   padding: new EdgeInsets.all(0.0),
                                   onPressed: () {
                                     swipeRight();
                                   },
                                   child: new Container(
                                     height: 60.0,
-                                    width: 130.0,
+                                    width: 60.0,
                                     alignment: Alignment.center,
                                     decoration: new BoxDecoration(
-                                      color: new Color.fromRGBO(27,67,131,1.0),
+                                      color: Colors.white,
                                       borderRadius:
                                           new BorderRadius.circular(60.0),
                                     ),
@@ -129,7 +210,7 @@ Positioned cardDemo(
                                       "GOING",
                                       style: new TextStyle(color: Colors.white),
                                     ),
-                                  ))
+                                  ))*/
                             ],
                           ))
                     ],

@@ -134,9 +134,9 @@ class CardDemoState extends State<CardDemo> with TickerProviderStateMixin {
           leading: new Container(
             margin: const EdgeInsets.all(15.0),
             child: new Icon(
-              Icons.restore_from_trash,
-              color: new Color.fromRGBO(27,67,131,1.0),
-              size: 40.0,
+              Icons.delete_forever,
+              color: new Color.fromRGBO(247, 123, 20, 1.0),
+              size: 45.0,
             ),
           ),
           actions: <Widget>[
@@ -159,7 +159,7 @@ class CardDemoState extends State<CardDemo> with TickerProviderStateMixin {
           title: new Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-/*              new Text(
+/*              new Text(                   //The Text in Center
                 "MK",
                 style: new TextStyle(
                     color: new Color.fromRGBO(247, 123, 20, 1.0),
@@ -168,10 +168,11 @@ class CardDemoState extends State<CardDemo> with TickerProviderStateMixin {
                     fontWeight: FontWeight.bold),
               ),*/
               new Image.asset(
-                'assets/img5.jpg',
-                height: 20.0,
+                'assets/img6.jpg',
+                height: 100.0,
+                alignment: Alignment.center,
               ),
-              new Container(
+              /*new Container(              //The Number of Cards
                 width: 20.0,
                 height: 20.0,
                 margin: new EdgeInsets.only(bottom: 20.0),
@@ -182,7 +183,7 @@ class CardDemoState extends State<CardDemo> with TickerProviderStateMixin {
                 ),
                 decoration: new BoxDecoration(
                     color: Colors.red, shape: BoxShape.circle),
-              )
+              )*/
             ],
           ),
         ),
