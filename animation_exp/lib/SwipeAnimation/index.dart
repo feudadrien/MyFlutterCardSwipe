@@ -136,7 +136,7 @@ class CardDemoState extends State<CardDemo> with TickerProviderStateMixin {
             child: new Icon(
               Icons.restore_from_trash,
               color: new Color.fromRGBO(27,67,131,1.0),
-              size: 30.0,
+              size: 40.0,
             ),
           ),
           actions: <Widget>[
@@ -152,29 +152,33 @@ class CardDemoState extends State<CardDemo> with TickerProviderStateMixin {
                   child: new Icon(
                     Icons.calendar_today,
                     color: new Color.fromRGBO(27,67,131,1.0),
-                    size: 30.0,
+                    size: 40.0,
                   )),
             ),
           ],
           title: new Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              new Text(
+/*              new Text(
                 "MK",
                 style: new TextStyle(
                     color: new Color.fromRGBO(247, 123, 20, 1.0),
                     fontSize: 30.0,
                     letterSpacing: 3.5,
                     fontWeight: FontWeight.bold),
+              ),*/
+              new Image.asset(
+                'assets/img5.jpg',
+                height: 20.0,
               ),
               new Container(
-                width: 15.0,
-                height: 15.0,
+                width: 20.0,
+                height: 20.0,
                 margin: new EdgeInsets.only(bottom: 20.0),
                 alignment: Alignment.center,
                 child: new Text(
                   dataLength.toString(),
-                  style: new TextStyle(fontSize: 10.0),
+                  style: new TextStyle(fontSize: 13.0),
                 ),
                 decoration: new BoxDecoration(
                     color: Colors.red, shape: BoxShape.circle),
