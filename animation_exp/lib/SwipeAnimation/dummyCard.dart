@@ -14,7 +14,7 @@ Positioned cardDemoDummy(
   // Size screenSize=(500.0,200.0);
   // print("dummyCard");
   return new Positioned(
-    bottom: 100.0 + bottom,
+    bottom: 40.0 + bottom,
     // right: flag == 0 ? right != 0.0 ? right : null : null,
     //left: flag == 1 ? right != 0.0 ? right : null : null,
     child: new Card(
@@ -22,8 +22,8 @@ Positioned cardDemoDummy(
       elevation: 4.0,
       child: new Container(
         alignment: Alignment.center,
-        width: screenSize.width / 1.2 + cardWidth,
-        height: screenSize.height / 1.7,
+        width: screenSize.width / 1.15 + cardWidth,
+        height: screenSize.height / 1.4,
         decoration: new BoxDecoration(
           color: Colors.white,
           borderRadius: new BorderRadius.circular(8.0),
@@ -32,7 +32,7 @@ Positioned cardDemoDummy(
           children: <Widget>[
             new Container(
               width: screenSize.width / 1.2 + cardWidth,
-              height: screenSize.height / 2.2,
+              height: screenSize.height / 1.75,
               decoration: new BoxDecoration(
                 borderRadius: new BorderRadius.only(
                     topLeft: new Radius.circular(8.0),
@@ -51,7 +51,7 @@ Positioned cardDemoDummy(
                 new RaisedButton(
                 padding: new EdgeInsets.all(0.0),
                 onPressed: () {},
-                elevation: 2.0,
+                elevation: 4.0,
                 color: new Color.fromRGBO(247, 123, 20, 1.0),
                 shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(60.0)),
                 child: new Container(
@@ -97,7 +97,7 @@ Positioned cardDemoDummy(
         new RaisedButton(
             padding: new EdgeInsets.all(0.0),
             onPressed: (){},
-            elevation: 2.0,
+            elevation: 4.0,
             color: Colors.white,
             shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(90.0)),
             child: new Container(
@@ -120,7 +120,7 @@ Positioned cardDemoDummy(
         new RaisedButton(
             padding: new EdgeInsets.all(0.0),
             onPressed: (){},
-            elevation: 2.0,
+            elevation: 4.0,
             color: Colors.white,
             shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(60.0)),
             child: new Container(

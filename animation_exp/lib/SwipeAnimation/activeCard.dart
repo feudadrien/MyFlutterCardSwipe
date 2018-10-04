@@ -20,7 +20,7 @@ Positioned cardDemo(
   Size screenSize = MediaQuery.of(context).size;
   // print("Card");
   return new Positioned(
-    bottom: 100.0 + bottom,
+    bottom: 40.0 + bottom,
     right: flag == 0 ? right != 0.0 ? right : null : null,
     left: flag == 1 ? right != 0.0 ? right : null : null,
     child: new Dismissible(
@@ -66,8 +66,8 @@ Positioned cardDemo(
                 elevation: 4.0,
                 child: new Container(
                   alignment: Alignment.center,
-                  width: screenSize.width / 1.2 + cardWidth,
-                  height: screenSize.height / 1.7,
+                  width: screenSize.width / 1.15 + cardWidth,
+                  height: screenSize.height / 1.4,
                   decoration: new BoxDecoration(
                     color: new Color.fromRGBO(255, 255, 255, 1.0),
                     borderRadius: new BorderRadius.circular(8.0),
@@ -76,7 +76,7 @@ Positioned cardDemo(
                     children: <Widget>[
                       new Container(
                         width: screenSize.width / 1.2 + cardWidth,
-                        height: screenSize.height / 2.2,
+                        height: screenSize.height / 1.75,
                         decoration: new BoxDecoration(
                           borderRadius: new BorderRadius.only(
                               topLeft: new Radius.circular(8.0),
