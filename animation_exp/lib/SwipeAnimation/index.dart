@@ -134,9 +134,10 @@ class CardDemoState extends State<CardDemo> with TickerProviderStateMixin {
           leading: new Container(
             margin: const EdgeInsets.all(15.0),
             child: new Icon(
-              Icons.settings,
+              Icons.account_circle ,
               //Icons.delete_forever,
-              color: new Color.fromRGBO(247, 123, 20, 1.0),
+              color: Colors.grey,
+              //color: new Color.fromRGBO(247, 123, 20, 1.0),
               size: 45.0,
             ),
           ),
@@ -151,9 +152,10 @@ class CardDemoState extends State<CardDemo> with TickerProviderStateMixin {
               child: new Container(
                   margin: const EdgeInsets.all(15.0),
                   child: new Icon(
-                    Icons.insert_invitation,
-                    color: new Color.fromRGBO(27,67,131,1.0),
-                    size: 40.0,
+                    Icons.message,
+                    color: Colors.grey,
+                    //color: new Color.fromRGBO(27,67,131,1.0),
+                    size: 45.0,
                   )),
             ),
           ],
@@ -171,6 +173,7 @@ class CardDemoState extends State<CardDemo> with TickerProviderStateMixin {
               new Image.asset(
                 'assets/img6.jpg',
                 height: 100.0,
+                width: 225.0,
                 alignment: Alignment.center,
               ),
               /*new Container(              //The Number of Cards
@@ -218,7 +221,7 @@ class CardDemoState extends State<CardDemo> with TickerProviderStateMixin {
                       backCardWidth, 0.0, 0.0, context);
                 }
               }).toList())
-              : new Text("No Event Left :(",
+              : new Text("Come Back Later :(",
               style: new TextStyle(color: new Color.fromRGBO(247, 123, 20, 1.0), fontSize: 50.0)),
         )));
   }

@@ -63,7 +63,7 @@ Positioned cardDemo(
               },
               child: new Card(
                 color: Colors.transparent,
-                elevation: 4.0,
+                elevation: 10.0,
                 child: new Container(
                   alignment: Alignment.center,
                   width: screenSize.width / 1.15 + cardWidth,
