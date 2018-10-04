@@ -51,7 +51,7 @@ Positioned cardDemoDummy(
                 new RaisedButton(
                 padding: new EdgeInsets.all(0.0),
                 onPressed: () {},
-                elevation: 4.0,
+                elevation: 10.0,
                 color: new Color.fromRGBO(247, 123, 20, 1.0),
                 shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(60.0)),
                 child: new Container(
@@ -97,7 +97,7 @@ Positioned cardDemoDummy(
         new RaisedButton(
             padding: new EdgeInsets.all(0.0),
             onPressed: (){},
-            elevation: 4.0,
+            elevation: 10.0,
             color: Colors.white,
             shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(90.0)),
             child: new Container(
@@ -120,7 +120,7 @@ Positioned cardDemoDummy(
         new RaisedButton(
             padding: new EdgeInsets.all(0.0),
             onPressed: (){},
-            elevation: 4.0,
+            elevation: 10.0,
             color: Colors.white,
             shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(60.0)),
             child: new Container(

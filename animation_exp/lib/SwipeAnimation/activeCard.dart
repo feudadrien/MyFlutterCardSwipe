@@ -99,7 +99,7 @@ Positioned cardDemo(
                                   onPressed: () {
                                     swipeLeft();
                                   },
-                                  elevation: 2.0,
+                                  elevation: 10.0,
                                   color: new Color.fromRGBO(247, 123, 20, 1.0),
                                   shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(60.0)),
                                   child: new Container(
@@ -149,7 +149,7 @@ Positioned cardDemo(
                                   onPressed: (){
                                     swipeRight();
                                   },
-                                  elevation: 2.0,
+                                  elevation: 10.0,
                                   color: Colors.white,
                                   shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(90.0)),
                                   child: new Container(
@@ -173,7 +173,7 @@ Positioned cardDemo(
                                   onPressed: (){
                                     swipeRight();
                                   },
-                                  elevation: 2.0,
+                                  elevation: 10.0,
                                   color: new Color.fromRGBO(27,67,131,1.0),
                                   shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(60.0)),
                                   child: new Container(
